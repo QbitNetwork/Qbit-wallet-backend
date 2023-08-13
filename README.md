@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/34389545/qbitcurrency.png)
+![image]()
 
 #### NPM
 [![NPM](https://nodei.co/npm/Qbit-wallet-backend.png?compact=true)](https://npmjs.org/package/Qbit-wallet-backend)
