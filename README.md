@@ -1,15 +1,15 @@
 ![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
 
 #### NPM
-[![NPM](https://nodei.co/npm/turtlecoin-wallet-backend.png?compact=true)](https://npmjs.org/package/turtlecoin-wallet-backend)
+[![NPM](https://nodei.co/npm/Qbit-wallet-backend.png?compact=true)](https://npmjs.org/package/Qbit-wallet-backend)
 
 #### Github
 
-https://github.com/turtlecoin/turtlecoin-wallet-backend-js
+https://github.com/QbitNetwork/Qbit-wallet-backend-js
 
-# turtlecoin-wallet-backend
+# Qbit-wallet-backend
 
-Provides an interface to the TurtleCoin network, allowing wallet applications to be built.
+Provides an interface to the QbitNetwork, allowing wallet applications to be built.
 
 * Downloads blocks from the network, either through a traditional daemon, or a blockchain cache for increased speed
 * Processes blocks, decrypting transactions that belong to the user
@@ -19,27 +19,30 @@ Provides an interface to the TurtleCoin network, allowing wallet applications to
 
 NPM:
 
-`npm install turtlecoin-wallet-backend --save`
+`npm install Qbit-wallet-backend --save`
 
 Yarn:
 
-`yarn add turtlecoin-wallet-backend`
+`yarn add Qbit-wallet-backend`
 
 ## Documentation
 
-[You can view the documentation here](https://blockapi.qbit.money/turtlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
+[You can view the documentation here](https://blockapi.qbit.money/Qbit-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
 
 You can see a list of all the other classes on the right side of the screen.
-Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('turtlecoin-wallet-backend')`.
+Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('turtlecoin-wallet-backend')`. CHANGE ALL TO ('Qbit-wallet-backend) in all files for this to work.
 
 ## Quick Start
 
-You can find an [example project in the examples](https://github.com/turtlecoin/turtlecoin-wallet-backend-js/tree/master/examples/example1) folder.
+You can find an [example project in the examples](https://github.com/QbitNetwork/Qbit-wallet-backend-js/tree/master/examples/example1) folder.
 
 ### Javascript
 
 ```javascript
-const WB = require('turtlecoin-wallet-backend');
+const WB = require('turtlecoin-wallet-backend'); CHANGE this to:
+
+(the below code in all Qbit files)
+const WB = require('Qbit-wallet-backend'); 
 
 (async () => {
     const daemon = new WB.Daemon('127.0.0.1', 22101);
@@ -160,7 +163,9 @@ In this example, we only print messages that fall into the SYNC category.
 You can view available categories and log levels in the documentation.
 
 ## Changelog
+### v6.0.8
 
+* Fix sync progress bar not showing syncing
 ### v6.0.7
 
 * Fix bug when scanning coinbase transactions and not using `/sync/raw`
