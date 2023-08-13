@@ -27,7 +27,7 @@ Yarn:
 
 ## Documentation
 
-[You can view the documentation here](https://turtlecoin.github.io/turtlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
+[You can view the documentation here](https://blockapi.qbit.money/turtlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
 
 You can see a list of all the other classes on the right side of the screen.
 Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('turtlecoin-wallet-backend')`.
@@ -42,7 +42,7 @@ You can find an [example project in the examples](https://github.com/turtlecoin/
 const WB = require('turtlecoin-wallet-backend');
 
 (async () => {
-    const daemon = new WB.Daemon('127.0.0.1', 20101);
+    const daemon = new WB.Daemon('127.0.0.1', 22101);
     /* OR
     const daemon = new WB.Daemon('blockapi.qbitconnect.com', 443);
     */
@@ -70,7 +70,7 @@ const WB = require('turtlecoin-wallet-backend');
 import { WalletBackend, Daemon, IDaemon } from 'turtlecoin-wallet-backend';
 
 (async () => {
-    const daemon: IDaemon = new Daemon('127.0.0.1', 20101);
+    const daemon: IDaemon = new Daemon('127.0.0.1', 22101);
 
     /* OR
     const daemon: IDaemon = new Daemon('blockapi.qbitconnect.com', 443);
@@ -441,7 +441,10 @@ Generated javascript files will be written to the dist/lib/ folder.
 * Ensure you have rebuilt the documentation, if you have changed it: `yarn docs`
 * Ensure the tests all still pass: `yarn test`, or `yarn test-all` if you have a local daemon running.
 * If adding a feature/fixing a bug, adding a test to verify your fix/feature functions as expected would be great. But don't sweat it.
-#   Q b i t - w a l l e t - b a c k e n d  
- #   Q b i t - w a l l e t - b a c k e n d  
- #   Q b i t - w a l l e t - b a c k e n d  
+#   Q b i t - w a l l e t - b a c k e n d 
+ 
+ #   Q b i t - w a l l e t - b a c k e n d 
+ 
+ #   Q b i t - w a l l e t - b a c k e n d 
+ 
  
