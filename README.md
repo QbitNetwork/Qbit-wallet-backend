@@ -165,7 +165,8 @@ You can view available categories and log levels in the documentation.
 ## Changelog
 ### v6.0.8
 
-* Fix sync progress bar not showing syncing
+* Fix the progress bar not showing syncing
+
 ### v6.0.7
 
 * Fix bug when scanning coinbase transactions and not using `/sync/raw`
